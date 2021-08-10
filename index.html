@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Web</title>
+    <!-----CSS----->
+    <link rel="stylesheet" href="css/style.css">
+    <!------FONT AWESOME-------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+
+<body>
+<nav class="nav-main">
+    <ul class="nav-menu">
+      <li>
+        <a>Home</a>
+      </li>
+      <li>
+        <a>Products</a>
+      </li>
+      <li>
+        <a>Contact</a>
+      </li>
+      <li>
+        <a>About</a>
+      </li>
+    </ul>
+   
+    
+    <a href="#" class="sesion">Iniciar Sesion</a>
+</nav>
+
+<main>
+  <form class="formulario" id="formulario">
+   <!-- Grupo: Usuario -->
+   <div class="formulario__grupo">
+     <label for="nombre" class="formulario__label">Nombre</label>
+     <div class="formulario__grupo-input">
+       <input type="text" class="formulario__input" name="nombre" id="nombre">
+     </div>
+   </div>
+ 
+   <!-- Grupo: Contraseña -->
+   <div class="formulario__grupo">
+     <label for="password" class="formulario__label">Contraseña</label>
+     <div class="formulario__grupo-input">
+       <input type="password" class="formulario__input" name="password" id="password">
+     </div>
+   </div>
+ 
+   <!-- Grupo: Correo Electronico -->
+   <div class="formulario__grupo">
+     <label for="correo" class="formulario__label">Correo Electrónico</label>
+     <div class="formulario__grupo-input">
+       <input type="email" class="formulario__input" name="correo" id="correo">
+     </div>
+   </div>
+ 
+ <!-------- captcha ---------->
+ 
+   <div class="formulario__grupo">
+     <div class="codigo-seguridad">
+         <p id="codigo">AdrThd6</p>
+         <div class="icono">
+             <span class="changeText" id="changeText">
+                 <i class="fas fa-sync-alt"></i>
+             </span>
+          </div>
+     </div>
+     <div class="userInput" id="userInput">
+         <input type="text" class="formulario__input" name="captcha" id="captcha">
+     </div>
+ </div>
+ 
+   <!-- Grupo: Terminos y Condiciones -->
+   <div class="formulario__grupo">
+     <label class="formulario__label">
+       <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos" required>
+       Acepto los Terminos y Condiciones
+     </label>
+   </div>
+ 
+   <div class="formulario__grupo formulario__grupo-btn-enviar">
+     <button type="submit" class="btn" id="btn">Enviar</button>
+     <p class="warning" id="warning"></p>
+   </div>
+ </form>
+ </main>
+
+  <footer>     
+    <div class="footer-content">
+       <ul class="socials">
+         <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+         <li><a href=""><i class="fab fa-twitter"></i></a></li>
+         <li><a href=""><i class="fab fa-instagram"></i></a></li>
+       </ul>
+     </div>       
+     <p class="text-center">Copyright @2021 | Designed With by <a href="#">Your Company Name</a></p>    
+  </footer>   
+
+<script src="js/validar.js"></script>
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous">
+</script>
+
+</body>
+</html>
